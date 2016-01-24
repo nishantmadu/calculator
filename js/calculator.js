@@ -32,6 +32,11 @@ var Calculator = {
       Calculator.handleInput(key);
     }
   },
+  evaluateResult:function(){
+    var result = eval(Calculator.previewContent().replace('X','*'));
+    $('#preview').html(result);
+    $('#result ').html(result);
+  },
   handleGenericInput:function(key){
     if(key=="0")
     {
@@ -44,7 +49,10 @@ var Calculator = {
       Calculator.handleOperator(key);
 
     }
-    else{
+    else if(key == "="){
+        Calculator.evaluateResult();
+    }
+    else {
       Calculator.handleInput(key);
     }
   },
