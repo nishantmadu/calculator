@@ -8,8 +8,9 @@
     font-weight: 400;
     text-align: right;
     font-size: 12vh;
-    background-color: lightgray;
-    overflow: hidden; }
+    background-color: #0D0702;
+    overflow: hidden;
+    color: #FFF; }
   #calculator #preview {
     height: 10vh;
     font-weight: 100;
